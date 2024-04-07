@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReactRoastDotnet.API</name>
+    </assembly>
+    <members>
+        <member name="T:ReactRoastDotnet.API.Controllers.AccountController">
+            <summary>
+            User Login and Registration controller.
+            </summary>
+        </member>
+        <member name="M:ReactRoastDotnet.API.Controllers.AccountController.Login(ReactRoastDotnet.Data.Models.User.UserLoginDto)">
+            <summary>
+            Logs in a user.
+            </summary>
+            <param name="userLoginDto">User credentials needed to login.</param>
+            <returns>User object including the token to access this app's services.</returns>
+            <response code="200">Returns the user logged-in object along with a bearer token.</response>
+            <response code="400">If invalid types for password or email are entered.</response>
+            <response code="401">If user's credentials are invalid.</response>
+        </member>
+        <member name="M:ReactRoastDotnet.API.Controllers.AccountController.Register(ReactRoastDotnet.Data.Models.User.UserRegisterDto)">
+            <summary>
+            Registers a new user for this application.
+            </summary>
+            <param name="userRegisterDto">User's credentials and information.</param>
+            <returns>The new user object.</returns>
+            <response code="201">Successfully register user to this application.</response>
+            <response code="400">If user credentials has invalid input values.</response>
+        </member>
+        <member name="M:ReactRoastDotnet.API.Controllers.AccountController.GetLoggedInUserAsync(ReactRoastDotnet.Data.Entities.User)">
+            <summary>
+            Gets a user object with the access token.
+            </summary>
+            <param name="user">User object to add token.</param>
+            <returns>User object with access token.</returns>
+        </member>
+        <member name="T:ReactRoastDotnet.API.Controllers.ApiController">
+            <summary>
+            Main controller that all controllers in this application will inherit from.
+            </summary>
+        </member>
+        <member name="T:ReactRoastDotnet.API.Controllers.CartController">
+            <summary>
+            The cart controller. Only authorized users can access.
+            </summary>
+            <response code="401">The user is not logged in.</response>
+        </member>
+        <member name="M:ReactRoastDotnet.API.Controllers.CartController.GetCart">
+            <summary>
+            Gets an existing cart from the current authenticated user.
+            </summary>
+            <returns>Cart with a list product items ordered and the date the cart was created.</returns>
+            <response code="200">If the user is authenticated and has a cart saved.</response>
+            <response code="404">If the user does not have a cart saved.</response>
+        </member>
+        <member name="M:ReactRoastDotnet.API.Controllers.CartController.AddItemToCart(System.Int32,System.Int32)">
+            <summary>
+            Adds an item to an existing cart. If the cart does not exist, then a new cart is created.
+            </summary>
+            <param name="id">The product id to add to the cart. (Currently 1-11)</param>
+            <param name="quantity">The amount of items to add to the cart (Max = 10).</param>
+            <returns>Cart created/modified.</returns>
+            <response code="201">Successfully added item to cart.</response>
+            <response code="400">Invalid types entered for the product id or quantity is more than 10.</response>
+        </member>
+        <member name="M:ReactRoastDotnet.API.Controllers.CartController.RemoveCartItem(System.Int32,System.Int32)">
+            <summary>
+            Removes an item from the cart.
+            </summary>
+            <param name="id">The product id to remove from the cart.</param>
+            <param name="quantity">The number of items to remove from the cart.</param>
+            <returns>No Content</returns>
+            <response code="204">Successfully remove item from cart.</response>
+            <response code="400">Invalid types entered for the product or quantity.</response>
+            <response code="404">If the product id item was not in the cart.</response>
+        </member>
+        <member name="T:ReactRoastDotnet.API.Controllers.ErrorsController">
+            <summary>
+            Test controller for exception handling in the client app. 
+            </summary>
+        </member>
+        <member name="T:ReactRoastDotnet.API.Controllers.FallbackController">
+            <summary>
+            Base class for an MVC controller with view. Effectively a view for our client application (React App). 
+            </summary>
+        </member>
+        <member name="T:ReactRoastDotnet.API.Controllers.OrdersController">
+            <summary>
+            Orders only open to authenticated users now.
+            Will implement guest orders in the future.
+            </summary>
+        </member>
+        <member name="M:ReactRoastDotnet.API.Controllers.OrdersController.GetOrders(ReactRoastDotnet.Data.RequestParams.OrderParams)">
+            <summary>
+            Gets a list of orders from the logged in user.
+            </summary>
+            <param name="orderParams">Order query.</param>
+            <returns>A list of previous orders.</returns>
+            <response code="200">User has previous orders and is logged in.</response>
+            <response code="401">User is not logged in.</response>
+        </member>
+        <member name="M:ReactRoastDotnet.API.Controllers.OrdersController.GetOrder(System.Int32)">
+            <summary>
+            Retrieve a previous order.
+            </summary>
+            <param name="id">The id of the order.</param>
+            <returns>The order requested.</returns>
+            <response code="200">Return order requested.</response>
+            <response code="400">Invalid id type.</response>
+            <response code="403">User does not have access to get an order that does not belong to them.</response>
+            <response code="404">Order not found.</response>
+        </member>
+        <member name="M:ReactRoastDotnet.API.Controllers.OrdersController.CreateOrder">
+            <summary>
+            Creates a new order.
+            </summary>
+            <returns>The newly created order receipt.</returns>
+            <response code="201">Order was created.</response>
+            <response code="400">Invalid body values were entered or cart has no items</response>
+            <response code="404">Cart was not found.</response>
+        </member>
+        <member name="T:ReactRoastDotnet.API.Controllers.ProductsController">
+            <summary>
+            Product CRUD controller.
+            </summary>
+        </member>
+        <member name="M:ReactRoastDotnet.API.Controllers.ProductsController.GetProducts(ReactRoastDotnet.Data.RequestParams.ProductParams)">
+            <summary>
+            Get a list of available products.
+            </summary>
+            <param name="productParams">Product search query to get drink name and or search products by name, popularity, or price.</param>
+            <returns>Product Item list requested by user.</returns>
+            <response code="200">Successfully obtained the paged products.</response>
+            <response code="400">Invalid query entered.</response>
+        </member>
+        <member name="M:ReactRoastDotnet.API.Controllers.ProductsController.GetProduct(System.Int32)">
+            <summary>
+            Gets a product item.
+            </summary>
+            <param name="id">The product item ID to retrieve.</param>
+            <returns>The product item if found.</returns>
+            <response code="200">The product item requested has been fetched.</response>
+            <response code="400">Invalid id type entered.</response>
+            <response code="404">Product item not found.</response>
+        </member>
+        <member name="M:ReactRoastDotnet.API.Controllers.ProductsController.CreateProduct(ReactRoastDotnet.Data.Models.Order.EditProductDto)">
+            <summary>
+            Create a new product. Only for admin roles.
+            </summary>
+            <param name="createProductDto">Product item to add to the database.</param>
+            <returns>The created product item.</returns>
+            <response code="201">Successfully created new product item.</response>
+            <response code="400">Invalid type entered in the body.</response>
+        </member>
+        <member name="M:ReactRoastDotnet.API.Controllers.ProductsController.EditProduct(ReactRoastDotnet.Data.Models.Order.EditProductDto,System.Int32)">
+            <summary>
+            Edit product in the database. Only for admins.
+            </summary>
+            <param name="editProductDto">The product item with new values.</param>
+            <param name="id">The id of the product item to edit.</param>
+            <returns>The updated product item.</returns>
+            <response code="200">Successfully updated the product item with the new values passed.</response>
+            <response code="400">Invalid type entered in the body.</response>
+            <response code="400">Product item does not exist.</response>
+        </member>
+        <member name="M:ReactRoastDotnet.API.Controllers.ProductsController.DeleteProduct(System.Int32)">
+            <summary>
+            Deletes a product item from our database.
+            Only for admins.
+            </summary>
+            <param name="id">The product id to be deleted.</param>
+            <returns>No content.</returns>
+            <response code="204">Successfully removed product item.</response>
+            <response code="400">Invalid id type.</response>
+            <response code="404">Product item does not exist.</response>
+        </member>
+        <member name="T:ReactRoastDotnet.API.Middleware.ExceptionMiddleware">
+            <summary>
+            Our global middleware that will catch errors and logged them.
+            </summary>
+        </member>
+    </members>
+</doc>

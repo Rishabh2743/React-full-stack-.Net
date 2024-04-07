@@ -1,0 +1,161 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\assets\\AuthFormHeader-e50a937c.js",
+      "PackagePath": "staticwebassets\\assets\\AuthFormHeader-e50a937c.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\assets\\AuthInput-179d8048.js",
+      "PackagePath": "staticwebassets\\assets\\AuthInput-179d8048.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\assets\\CheckoutPage-f0e038d7.js",
+      "PackagePath": "staticwebassets\\assets\\CheckoutPage-f0e038d7.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\assets\\MenuPage-343d66e6.js",
+      "PackagePath": "staticwebassets\\assets\\MenuPage-343d66e6.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\assets\\SignInPage-9444f052.js",
+      "PackagePath": "staticwebassets\\assets\\SignInPage-9444f052.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\assets\\SignUpPage-2bdafc56.js",
+      "PackagePath": "staticwebassets\\assets\\SignUpPage-2bdafc56.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\assets\\index-41493e7a.css",
+      "PackagePath": "staticwebassets\\assets\\index-41493e7a.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\assets\\index-e97df17e.js",
+      "PackagePath": "staticwebassets\\assets\\index-e97df17e.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\drinkImages\\americano.jpg",
+      "PackagePath": "staticwebassets\\drinkImages\\americano.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\drinkImages\\cappuccino.jpg",
+      "PackagePath": "staticwebassets\\drinkImages\\cappuccino.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\drinkImages\\coldBrew.jpg",
+      "PackagePath": "staticwebassets\\drinkImages\\coldBrew.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\drinkImages\\cortado.jpg",
+      "PackagePath": "staticwebassets\\drinkImages\\cortado.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\drinkImages\\dripCoffee.jpg",
+      "PackagePath": "staticwebassets\\drinkImages\\dripCoffee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\drinkImages\\espresso.jpg",
+      "PackagePath": "staticwebassets\\drinkImages\\espresso.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\drinkImages\\flatWhite.jpg",
+      "PackagePath": "staticwebassets\\drinkImages\\flatWhite.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\drinkImages\\icedLatte.jpg",
+      "PackagePath": "staticwebassets\\drinkImages\\icedLatte.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\drinkImages\\latte.jpg",
+      "PackagePath": "staticwebassets\\drinkImages\\latte.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\drinkImages\\macchiato.jpg",
+      "PackagePath": "staticwebassets\\drinkImages\\macchiato.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\drinkImages\\nitroBrew.jpg",
+      "PackagePath": "staticwebassets\\drinkImages\\nitroBrew.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\drinkImages\\source.txt",
+      "PackagePath": "staticwebassets\\drinkImages\\source.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\meta\\android-chrome-192x192.png",
+      "PackagePath": "staticwebassets\\meta\\android-chrome-192x192.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\meta\\android-chrome-512x512.png",
+      "PackagePath": "staticwebassets\\meta\\android-chrome-512x512.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\meta\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\meta\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\meta\\browserconfig.xml",
+      "PackagePath": "staticwebassets\\meta\\browserconfig.xml"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\meta\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\meta\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\meta\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\meta\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\meta\\favicon.ico",
+      "PackagePath": "staticwebassets\\meta\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\meta\\mstile-144x144.png",
+      "PackagePath": "staticwebassets\\meta\\mstile-144x144.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\meta\\mstile-150x150.png",
+      "PackagePath": "staticwebassets\\meta\\mstile-150x150.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\meta\\mstile-310x150.png",
+      "PackagePath": "staticwebassets\\meta\\mstile-310x150.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\meta\\mstile-310x310.png",
+      "PackagePath": "staticwebassets\\meta\\mstile-310x310.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\meta\\mstile-70x70.png",
+      "PackagePath": "staticwebassets\\meta\\mstile-70x70.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\meta\\safari-pinned-tab.svg",
+      "PackagePath": "staticwebassets\\meta\\safari-pinned-tab.svg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\React + .Net\\ReactRoastDotnet-main\\ReactRoastDotnet.API\\wwwroot\\meta\\site.webmanifest",
+      "PackagePath": "staticwebassets\\meta\\site.webmanifest"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ReactRoastDotnet.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.ReactRoastDotnet.API.props",
+      "PackagePath": "build\\ReactRoastDotnet.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ReactRoastDotnet.API.props",
+      "PackagePath": "buildMultiTargeting\\ReactRoastDotnet.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.ReactRoastDotnet.API.props",
+      "PackagePath": "buildTransitive\\ReactRoastDotnet.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
