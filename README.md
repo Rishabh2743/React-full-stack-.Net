@@ -1,5 +1,28 @@
 # ReactRoastDotnet
+
 A coffee shop website using React with Vite and React Router, and ASP.NET with Entity Framework and Authentication.
+
+## Live Demo
+
+**Note:** Please allow application to finish loading. Long loading time is due to
+a [cold start](https://azure.microsoft.com/en-us/blog/understanding-serverless-cold-start/)
+where the server and the database are being instantiated after being inactive for more than 10 minutes.
+
+
+You can use the provided demo account if you do not want to create an account:
+<br />
+Email: `demo@gmail.com `
+<br />
+Password: `P@ssw0rd`
+
+### React Client Application
+https://react-roast.azurewebsites.net
+
+### ASP.NET Swagger/OpenAPI Specification
+https://react-roast.azurewebsites.net/swagger/index.html
+You can register an account or sign in with the demo account provided above and copy the token given to the swagger's
+authorize button.
+
 ## Preview 
 ![Desktop Preview](/Assets/DesktopPreview.gif)
 
@@ -67,6 +90,40 @@ email and name.
 * [Daisy UI](https://daisyui.com)
 * ~~Redux~~ [Zustand](https://github.com/pmndrs/zustand)
 
+## Local Setup
+
+*Note*:
+You must set up a local environment with [Postgresql](https://www.postgresql.org) and change the following in
+file appsettings.Development.json and replace {} with your own postgresql settings:
+
+```
+Server=localhost;Port={};User Id={};Password={};Database=app
+```
+
+1. Clone this repository:
+    ```
+    git clone https://github.com/AmielCyber/ReactRoastDotnet
+    ```
+2. Go to the API repository
+    ```
+    cd ReactRoastDotnet/ReactRoastDotnet.API
+    ```
+3. Download and install NuGet dependencies:
+    ```
+    dotnet restore
+    ```
+4. Build the .NET application:
+   ```
+   dotnet build
+   ```
+5. Create SQLite database:
+   ```
+   dotnet ef database update --project ../ReactRoastDotnet.Data
+   ```
+6. Test the application with SwaggerUI:
+   ```
+   dotnet run
+   ```
 
 ## Database Schema
 
